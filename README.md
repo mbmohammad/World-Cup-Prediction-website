@@ -112,10 +112,4 @@ Two ways to populate fixtures and results:
 - **Anti-cheat.** The lock-out is server-side. Also log IP + user-agent per prediction for auditing.
 - **Email verification & password reset** — not in this scaffold; add when going to real users (issue signed tokens, send via SMTP/SES).
 
-## Next steps to ship
 
-1. `go mod tidy` inside `backend/` to populate `go.sum`.
-2. `npm install` inside `frontend/` to generate `package-lock.json`.
-3. Implement the team-ID mapping in `internal/sync/footballdata.go` once the competition publishes.
-4. Add an admin user / admin endpoints to manually create fixtures before launch.
-5. Buy a domain, point it at the host, add Traefik + Let's Encrypt.
